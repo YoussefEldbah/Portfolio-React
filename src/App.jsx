@@ -5,26 +5,30 @@ import Contact from './Components/Contact/Contact'
 import About from './Components/About/About'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Home from './Components/Home/Home'
-import NotFound from './Components/NotFound/NotFound'
 
 
 export default function App() {
-  let routes=  createBrowserRouter([
-    { path:"",element:<Layout/>,children:[
-      {index:"true",element:<Home/>},
-      {path:"contact",element:<Contact/>},
-      {
-        path:"about",element: <About/>
-      },
-      {
-        path:"portfolio",element: <Portfolio/>
-      },
-      { path:"*",element:<NotFound/>}
+  let routes = createBrowserRouter([
+    {
+      path: "",
+      element: <Layout />,
+      children: [
+        { path: "/", element: <Home/> },
+        { path: "home", element: <Home/> },
+        { path: "contact", element: <Contact/> },
+        {
+          path: "about", element: <About/>
+        },
 
-    ]}
+        {
+          path: "portfolio", element: <Portfolio/>
+        },
+
+      ]
+    }
   ])
   return (
-<RouterProvider router={routes}></RouterProvider>
+    <RouterProvider router={routes}></RouterProvider>
   )
 }
 

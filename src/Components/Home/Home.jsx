@@ -5,7 +5,7 @@ export default function Home() {
   return (<>
   
   <section className={`${ay7aga.home} home mt-5`}>
-    <div className="container  ">
+    <div className="container">
       <div className="avatar-img">
         <img className={`${ay7aga.img} my-5`} src={ava} alt="" />
       </div>

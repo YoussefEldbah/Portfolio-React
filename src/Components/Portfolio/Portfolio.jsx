@@ -14,7 +14,7 @@ export default function Portfolio() {
   ])
   return (
 <>
-<section className={`${ay7ga.portflio} py-5 mb-4`}>
+<section className={`${ay7ga.portflio} py-5 my-4`}>
   
   <div className="container text-center ">
     <div className="title my-5 ">
